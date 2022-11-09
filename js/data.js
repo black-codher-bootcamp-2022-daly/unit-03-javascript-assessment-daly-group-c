@@ -63,3 +63,4 @@ export const dates = [
     summary: "The first synthetic organic dye was discovered",
   },
 ];
+
