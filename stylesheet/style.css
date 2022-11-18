@@ -1,0 +1,26 @@
+#modal-container{
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  background-color: purple;
+  text-align: center;
+  color: white;
+}
+
+#modal-close-button{
+    width: 100px;
+    height: 20px;
+}
+
+/* .blur{
+    filter: blur(8px);
+}
+
+.noBlur{
+    filter: blur(8px);
+} */
+
+
+

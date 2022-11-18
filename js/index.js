@@ -3,21 +3,37 @@ import { dates } from "./data.js";
 function modalContainer(targetDate) {
   const modalBox = document.querySelector("#modal-container");
   modalBox.innerHTML = `
-  <h1 id="modal-title"> ${targetDate.title}</h1>  
-  <h2 id="modal-date"> ${targetDate.date} </h2> 
-  <img id="modal-image"> ${targetDate.image}</img>
-  <p id="modal-full-description"> ${targetDate.fullDescription}</p>
-  <button id="modal-close-button"></button>
+  <h1 class="modal" id="modal-title"> ${targetDate.title}</h1>  
+  <h2 class="modal" id="modal-date"> ${targetDate.date} </h2> 
+  <img class="modal" id="modal-image"> ${targetDate.image}</img>
+  <p class="modal" id="modal-full-description"> ${targetDate.fullDescription}</p>
   `;
+  const modalCloseButton = document.createElement("button");
+  modalBox.appendChild(modalCloseButton);
+  modalCloseButton.id = "modal-close-button";
+  modalCloseButton.textContent = "Close";
+
+
+  modalCloseButton.addEventListener("click", function() {
+    modalBox.style.display = "none";
+
+    });
 }
-console.log(typeof modalContainer);
+
+
 for (let i = 0; i < dates.length; i++) {
   const timelineItem = document.createElement("div");
+  timelineItem.className = "timeline-item";
+
+
   const modalButton = document.createElement("button");
   modalButton.className = "timeline-item-more-info";
   modalButton.textContent = "More Info";
-  modalButton.onclick = () => modalContainer(dates[i]);
-  timelineItem.className = "timeline-item";
+
+  modalButton.addEventListener("click", function(){
+    modalContainer(dates[i]);
+    modalBox.style.removeProperty('display');  
+  });
 
   timelineItem.innerHTML = `<h2 class="timeline-item-title"> ${dates[i].title}</h2> 
    <span class="timeline-item-date"> ${dates[i].date} </span> 
@@ -43,6 +59,10 @@ for (let i = 0; i < dates.length; i++) {
 
 const fullModalDescription = dates;
 
+
+
+
+
 //dates.map((fullModalDescription, dates) => {
 // const modalBox = document.createElement("div");
 // const buttonOpen = document.createElement("button")
@@ -63,6 +83,7 @@ const fullModalDescription = dates;
 const modalBox = document.createElement("div");
 modalBox.setAttribute("id", "modal-container");
 document.querySelector(".timeline").appendChild(modalBox);
+
 
 //buttonOpen.onclick
 
