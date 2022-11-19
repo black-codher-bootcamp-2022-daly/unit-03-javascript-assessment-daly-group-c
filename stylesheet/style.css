@@ -22,5 +22,54 @@
     filter: blur(8px);
 } */
 
+title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20;
+    color:black;
+}
+
+body {
+    background-color: pink;
+}
+
+h2 {
+    color: blueviolet;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+h3 {
+
+    color: blueviolet;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.timeline-item-date {
+    color: blueviolet;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    justify-content: center;
+}
+
+.more-info {
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    justify-content: center;
+}
+
+.timeline-item {
+    border-radius: 2%;
+    background-color: rgb(236, 226, 235);
+    margin: 5% 35% 5% 30%;
+    padding: 2%;
+    border-style: double;
+
+}
 
 
