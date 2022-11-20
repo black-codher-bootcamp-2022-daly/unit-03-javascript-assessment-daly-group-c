@@ -1,13 +1,16 @@
 #modal-container{
 
-  position: absolute;
+  position: fixed;
   left: 50%;
-  top: 50%;
+  top: 52%;
+  margin-top: 0;
+  z-index: index 9999;;
   -webkit-transform: translate(-50%, -50%);
   background-color: rgb(206, 112, 206);
   text-align: center;
   color: white;
   border-radius: 2%;
+  position: -webkit-sticky;
 }
 
 #modal-close-button{
@@ -90,3 +93,7 @@ p {
     z-index: -999;
 }
 
+#modal-image {
+    width: auto;
+    height: 300px;
+}
