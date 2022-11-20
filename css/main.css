@@ -1,0 +1,106 @@
+#modal-container{
+
+  position: fixed;
+  left: 47%;
+  top: 52%;
+  margin-top: 0;
+  z-index: index 9999;;
+  -webkit-transform: translate(-50%, -50%);
+  background-color: rgb(206, 112, 206);
+  text-align: center;
+  color: white;
+  border-radius: 2%;
+  position: -webkit-sticky;
+}
+
+#modal-close-button{
+    width: 100px;
+    height: 20px;
+}
+
+/* .blur{
+    filter: blur(8px);
+}
+
+.noBlur{
+    filter: blur(8px);
+} */
+
+.title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    color:blueviolet;
+    display: flex;
+    position: absolute;
+    top: 5px;
+    left: 22%;
+    margin: 0%;
+
+}
+
+body {
+    background-color: pink;
+}
+
+h2 {
+    color: blueviolet;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+h3 {
+
+    color: blueviolet;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.timeline-item-date {
+    color: blueviolet;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    justify-content: center;
+}
+
+.more-info {
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    justify-content: center;
+}
+
+.timeline-item {
+    border-radius: 2%;
+    background-color: rgb(236, 226, 235);
+    margin: 6% 35% 5% 30%;
+    padding: 2%;
+    border-style: double;
+    
+}
+
+.timeline-item-more-info {
+  position: relative;
+  left: 44%;
+  background-color: aquamarine;
+}
+
+.vl {
+    border-left: 6px solid orange;
+    height: 2000px;
+    position: absolute;
+    left: 50%;
+    margin-left: -20px;
+    top: 5rem;
+    z-index: -999;
+}
+
+#modal-image {
+    width: auto;
+    height: 300px;
+}
+
