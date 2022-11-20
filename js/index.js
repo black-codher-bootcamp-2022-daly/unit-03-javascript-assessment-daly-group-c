@@ -5,7 +5,7 @@ function modalContainer(targetDate) {
   modalBox.innerHTML = `
   <h1 class="modal" id="modal-title"> ${targetDate.title}</h1>  
   <h2 class="modal" id="modal-date"> ${targetDate.date} </h2> 
-  <img class="modal" id="modal-image"> ${targetDate.image}</img>
+  <img class="modal" id="modal-image" src="${targetDate.image}"></img>
   <p class="modal" id="modal-full-description"> ${targetDate.fullDescription}</p>
   `;
   const modalCloseButton = document.createElement("button");
