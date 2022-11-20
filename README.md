@@ -1,4 +1,4 @@
-[TODO: Replace with your Netflify status badge]
+[![Netlify Status](https://api.netlify.com/api/v1/badges/15f9bed3-f436-4519-b741-036865c2e955/deploy-status)](https://app.netlify.com/sites/serene-gecko-9ce6fc/deploys)
 
 # JavaScript Assessment
 
