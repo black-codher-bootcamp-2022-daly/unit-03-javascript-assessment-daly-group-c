@@ -1,5 +1,10 @@
 import { dates } from "./data.js";
 
+const title = document.createElement("h1");
+title.className ="title"
+title.innerHTML = "Mayme's Bakery Timeline";
+document.body.appendChild(title);
+
 function modalContainer(targetDate) {
   const modalBox = document.querySelector("#modal-container");
   modalBox.innerHTML = `
