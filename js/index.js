@@ -46,4 +46,8 @@ const modalBox = document.createElement("div");
 modalBox.setAttribute("id", "modal-container");
 document.querySelector(".timeline").appendChild(modalBox);
 
+const verticalLine = document.createElement("div");
+verticalLine.className = "vl";
+document.body.appendChild(verticalLine);
+
 console.log(fullModalDescription);
